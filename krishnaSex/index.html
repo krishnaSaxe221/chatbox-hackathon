@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .full-container{
+            /* border: 2px solid red; */
+            max-width: 50vw;
+            box-shadow: 0px 0px 10px 0px #0000003b;
+        }
+
+        .display-picture{
+            border-radius: 50%;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .up-chat-cont{
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(to right, #d2d2d2, rgb(215, 215, 215));
+            box-shadow: 0px 0px 10px 0px #0000003b;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+        }
+
+        .left-profile{
+            display: flex;
+            align-items: center;
+            color: #000;
+            padding: 0.5rem;
+            font-family: sans-serif;
+        }
+
+        .right-profile{
+            display: flex;
+            align-items: center;
+        }
+
+        .right-profile img{
+            /* border: 2px solid red; */
+            width: 2rem;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+
+        .up-chat-cont h5{
+            color: rgb(69, 159, 255);
+            margin-top: 0.2rem;
+        } 
+
+        .friend-detrail, .display-picture{
+            margin: 0.4rem;
+        }
+
+        .body-chat-cont{
+            padding: 1rem;
+            height: 70vh;
+            overflow-y: scroll;
+        }
+
+        .reply{
+            /* border: 1px solid red; */
+            width: 50%;
+            padding: 1rem;
+            background: rgb(232, 232, 232);
+            border-radius: 10px 10px 0px 10px ;
+            font-family: sans-serif;
+        }
+
+        .message{
+            /* border: 1px solid red; */
+            width: 50%;
+            padding: 1rem;
+            border-radius: 0px 10px 10px 10px;
+            background: rgb(69, 159, 255);
+            color: white;
+            font-family: sans-serif;
+        }
+
+
+        .reply-upfront{
+            /* border: 2px solid red; */
+            padding: 1rem;
+        }
+
+        .message-upfront{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: end;
+            padding: 1rem;
+        }
+
+        .enter-message{
+            /* border: 2px solid red; */
+            padding: 1rem;
+        }
+
+        .enter-message input[type="text"]{
+            padding: 1rem 1rem;
+            width: 90%;
+            border: none;
+            background: rgb(232, 232, 232);
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        .enter-message input[type="text"]:focus{
+            outline: none;
+        }
+
+        .enter-message input[type="submit"]{
+            border-radius: 5px;
+            padding: 1rem 0.5rem;
+            width: 9.54%;
+            background-color: rgb(69, 159, 255);
+            color: white;
+            outline: none;
+            border: none;
+            font-size: large
+        }
+    </style>
+</head>
+<body>
+    <div class="full-container">
+        <div class="chat-cont">
+            <div class="up-chat-cont">
+                <div class="left-profile">
+                    <img src="20221201_075558.jpg" alt="noimg" class="display-picture">
+                    <div class="friend-detrail">
+                        <h2 class="username">Krishna Saxena</h2>
+                        <h5 class="online-status">Online</h5>
+                    </div>
+                </div>
+                <div class="right-profile">
+                    <img src="./call.png" alt="" class="CTA" title="call">
+                    <img src="./facetime.png" alt="" class="CTA"ideo title="Video Call">
+                    <img src="./more.png" alt="" class="CTA" title="More Options">
+                </div>
+            </div>
+            <div class="body-chat-cont">
+                <div class="reply-upfront">
+                    <div class="reply">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam quas. Iusto odio enim rem ipsa dolore quibusdam voluptatibus dolorem, vero sequi et similique magnam deleniti molestiae beatae nulla a?</p>
+                    </div>
+                </div>
+                    <div class="message-upfront">
+                        <div class="message">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iusto dolorum voluptatum consectetur rerum sapiente quisquam neque in. Iusto eligendi expedita atque recusandae dolorum modi enim vitae magnam soluta dolore.
+                        </div>
+                    </div>
+                    <div class="reply-upfront">
+                        <div class="reply">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam quas. Iusto odio enim rem ipsa dolore quibusdam voluptatibus dolorem, vero sequi et similique magnam deleniti molestiae beatae nulla a?</p>
+                        </div>
+                    </div>
+                    <div class="message-upfront">
+                        <div class="message">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iusto dolorum voluptatum consectetur rerum sapiente quisquam neque in. Iusto eligendi expedita atque recusandae dolorum modi enim vitae magnam soluta dolore.
+                        </div>
+                    </div>
+                    <div class="reply-upfront">
+                        <div class="reply">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, nam quas. Iusto odio enim rem ipsa dolore quibusdam voluptatibus dolorem, vero sequi et similique magnam deleniti molestiae beatae nulla a?</p>
+                        </div>
+                    </div>
+                    <div class="message-upfront">
+                        <div class="message">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iusto dolorum voluptatum consectetur rerum sapiente quisquam neque in. Iusto eligendi expedita atque recusandae dolorum modi enim vitae magnam soluta dolore.
+                        </div>
+                    </div>
+            </div>
+            <div class="enter-message">
+                <input type="text" name="" id="" placeholder="Type message...">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
